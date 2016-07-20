@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Forms</title>
+  </head>
+  <body>
+    <h1>Web Forms</h1>
+    <form>
+      <!-- Add labels and field's for the user's first and last name -->
+      <label for="userName">First and Last Name</label>
+      <input type="text" id="userName">
+      <!-- Add a label and field for the user's email -->
+      <label for="emailAddress">Email Address</label>
+      <input type="email" id="emailAddress">
+      <!-- Add a label field for the user's password -->
+      <br>
+      <hr>
+      <label for="password">Password</label>
+      <input type="password" id="password">
+      <!-- Add a label and field for the user's telephone # -->
+      <br>
+      <hr>
+      <label for="phoneNumber">Phone Number</label>
+      <input type="tel" id="phoneNumber" placeholder="555-555-5555">
+      <!-- Add a label and field where a user can select their age using the arrows -->
+      <br>
+      <hr>
+      <label for="age">Age</label>
+      <input type="number" id="age" min="18" max="99">
+      <!-- Add a label and field for a user to enter a link to their website -->
+      <br>
+      <hr>
+      <label for="personalWebsite">Personal Website</label>
+      <input type="url" id="personalWebsite">
+      <!-- Add a label and field for a user to upload their resume -->
+      <br>
+      <hr>
+      <label for="uploadResume">Upload Resume</label>
+      <input type="file" id="uploadResume">
+      <!-- Add a label and field where a user can select their favorite color -->
+      <br>
+      <hr>
+      <label for="favoriteColor">What is your favorite color?</label>
+      <input type="color" id="favoriteColor" value="#CD0070">
+      <!-- Add a label and field where a user can use a range slider (1-10) to specify their confidence with JavaScript -->
+      <br>
+      <hr>
+      <label for="confidenceLevel">Confidence Level</label>
+      <input type="range" id="confidenceLevel" value="2" min="0" max="10">
+      <!-- Add a label and way a user can select the skills they know from the following available choices (git, HTML, CSS, Sending E-mails) -->
+      <hr>
+      <br>
+      <label for="skills">Skills (select all that apply)
+        <input type="checkbox" value="git" class="skills">Git
+        <input type="checkbox" value="html" class="skills">HTML
+        <input type="checkbox" value="javascript" class="skills">JavaScript
+        <input type="checkbox" value="sending_emails" class="skills">Sending Emails
+      </label>
+      <!-- Add a button for the user to submit the form -->
+
+      <!-- Add a button for the user to clear the form —->
+      <!--  -->
+      <br>
+      <hr>
+      <button type="submit" name="submitButton">Submit</button>
+      <button type="reset" name="resetButton">Reset</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
